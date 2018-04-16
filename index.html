@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>
+    To Do List
+  </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>
+      todos
+    </h1>
+    <div>
+      <input type="text" id="todoInput" placeholder="What needs to be done?" autofocus>
+    </div>
+    <div id="main" style="display: none;">
+      <input id="toggleArrow" type="checkbox">
+      <ul id="list"></ul>
+      <footer>
+        <span id="todoCount">0 items left</span>
+        <div class="filters">
+          <button type="button" id="allFilter" class="on">All</button>
+          <button type="button" id="activeFilter">Active</button>
+          <button type="button" id="completedFilter">Completed</button>
+        </div>
+        <button type="button" id="clearCompleted">Clear Completed</button>
+      </footer>
+    </div>
+  </div>
+</body>
+<script src="todo.js"></script>
+</html>
